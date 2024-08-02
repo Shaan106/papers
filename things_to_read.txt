@@ -1,0 +1,12 @@
+Hardware-Friendly Random Forest Classification of iEEG Signals for Implantable Seizure Detection:
+https://ieeexplore.ieee.org/document/10079382
+
+
+Distill
+https://www.cs.yale.edu/homes/abhishek/jvesely-cgo22.pdf
+Trinity
+https://www.anuragkhandelwal.com/papers/trinity.pdf
+BIDS-iEEG
+https://drive.google.com/file/d/1-f7rhJeyTUKX2FIG0FNM0RvG3iNqYFV8/view
+Neural Electrodes
+https://www.research-collection.ethz.ch/handle/20.500.11850/490041
