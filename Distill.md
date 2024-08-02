@@ -1,5 +1,3 @@
-https://www.cs.yale.edu/homes/abhishek/jvesely-cgo22.pdf
-
 # Distill: Domain-Specific Compilation for Cognitive Models
 
 ## Paper
