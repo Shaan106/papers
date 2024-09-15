@@ -1,6 +1,4 @@
 
-
-
 ### NER
 https://2023.ieee-ner.org
 Neural Engineering Conference
