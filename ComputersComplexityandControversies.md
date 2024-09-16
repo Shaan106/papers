@@ -7,8 +7,6 @@ Robert P. Colwell, Charles Y. Hitchcock m, E. Douglas Jensen, H. M. Brinkley Spr
 IEEE Computer, vol. 18, no. 9, pp. 8–19 \
 September 1985
 
-(1) a description of the problem and motivation; (2) the main ideas/approach of the paper (solution, method, technique); (3) strengths and weaknesses of the paper; and (4) at least one question for discussion.
-
 ## Problem Description and Motivation
 
 This paper attempts to identify and provide guidance on how to better conduct computer architecture research concerning comparision and evaluation of RISC and CISC systems. The main motivation is that the authors believe that the current methods of comparing RISC and CISC systems are flawed and that the results are not reliable. Specifically, they believe that RISC is often overly glorified by research, often beyond its true capabilities, and that CISC research does not produce enough standardised results to allow for true comparison between the two architectures.
