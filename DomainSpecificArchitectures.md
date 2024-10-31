@@ -31,4 +31,6 @@ The authors propose a video acceleration system built around a new hardware comp
 - **Resource Demand**: While it offers great performance, the VCU requires a lot of memory bandwidth and power, which might raise concerns about cost-effectiveness in some scenarios.
 
 ## Questions for Discussion
-- Something interesting I saw was the power law watch time - 80% of watch time on 20% of videos. How does this affect resource distribution in a system like this? Do you even need to make VCU hardware available for all videos, or just the ones you presume will be most popular?
+- Something interesting I saw was the power law watch time - 80% of watch time on 20% of videos. 
+How does this affect resource distribution in a system like this? 
+Do you even need to make VCU hardware available for all videos, or just the ones you presume will be most popular?
