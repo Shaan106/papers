@@ -1,43 +1,62 @@
-**Paper**  
-**Energy-Efficient Server Design: A Survey and Future Directions**  
-David G. Andersen, M. Satyanarayanan  
-*IEEE Computer, 2010.*
+# Sustainable AI: Environmental Implications, Challenges, and Opportunities
 
-## Problem Description and Motivation  
-This paper explores energy consumption issues in data centers, focusing on the growing power requirements of servers, which are causing rising operational costs and environmental impacts. Data centers, which house thousands of servers, often run at low utilization, leading to a significant waste of energy. The paper proposes optimizing server hardware and workloads to reduce energy consumption while maintaining performance, highlighting the importance of designing energy-efficient server systems to manage power costs and environmental sustainability.
+**Paper**  
+*Carole-Jean Wu, et al.*  
+Facebook AI, 2022
+
+---
+
+## Problem Description and Motivation
+The paper addresses the environmental impact of AI's exponential growth. As AI applications rapidly expand across industries, there is a super-linear growth in data, model sizes, and infrastructure requirements. This growth creates significant environmental challenges through both operational energy consumption and the manufacturing carbon footprint. The authors argue that understanding and mitigating AI's environmental impact requires a holistic approach, considering the complete lifecycle of AI systems.
+
+---
 
 ## Main Ideas/Approach
 
-1. **Energy-Efficient Server Design**:  
-   The authors argue that reducing energy consumption in servers involves designing hardware components that consume less power during low activity periods while still being capable of meeting performance requirements during peak workloads.
+### Growth Trends in AI
+- Model sizes increased 1000x in recent years
+- Training data volumes doubled between 2019-2021
+- Infrastructure capacity grew 2.9x for training and 2.5x for inference
+- Model parameters increased 20x for recommendation systems
 
-2. **Idle and Low-Utilization Power Consumption**:  
-   A significant portion of energy waste comes from idle or low-utilization periods in data centers. The paper emphasizes that servers often consume the same amount of power regardless of workload, especially with non-CPU components like memory and storage. To achieve energy efficiency, power consumption must scale down when the server is underutilized.
+### Development Phases
+1. Data Processing: Feature extraction and data preparation
+2. Experimentation: Algorithm design and evaluation
+3. Training: Production-scale model training
+4. Inference: Model deployment and prediction serving
 
-3. **Dynamic Voltage and Frequency Scaling (DVFS)**:  
-   The paper highlights that CPUs can scale power consumption dynamically through techniques such as voltage and frequency scaling, but other components like memory, storage, and networking lack similar dynamic power management.
+### Carbon Footprint Analysis
+- Both operational and embodied carbon must be considered.
+- Manufacturing accounts for ~50% of total carbon footprint.
+- Infrastructure power capacity roughly splits as:  
+  - 10% Experimentation  
+  - 20% Training  
+  - 70% Inference  
+- Training large models can produce emissions equivalent to 242,231 miles of car travel.
 
-4. **Reducing Redundancy and Improving Hardware Efficiency**:  
-   One approach to reduce energy use is minimizing redundancy in server hardware. Optimizing the physical architecture, improving component efficiency, and reducing the number of active components during low-utilization periods can result in energy savings.
+### Sustainability Strategies
+- Hardware-software co-design for efficiency
+- Use of carbon-free energy sources
+- Resource-efficient experimentation
+- Data efficiency improvements
 
-5. **Energy Proportionality**:  
-   The authors emphasize the idea of energy-proportional computing, where power consumption should be directly proportional to the workload. For data centers to be energy-efficient, all components, not just CPUs, must be able to adjust their power usage based on demand.
-
-6. **Energy-Aware Software**:  
-   The paper stresses the need for energy-aware software that can adapt to hardware capabilities and adjust workloads based on power efficiency. This includes techniques like dynamic resource allocation and task scheduling to minimize energy waste.
+---
 
 ## Strengths and Weaknesses
 
 ### Strengths
-- **Innovative and Comprehensive**: The paper addresses energy efficiency across all components of server systems, not just CPUs.
-- **Clear Call to Action**: The authors highlight the importance of adopting energy-efficient designs to reduce both operational costs and environmental impact.
-- **Real-World Relevance**: The focus on practical solutions, such as dynamic power scaling and software optimization, is highly applicable to current data center environments.
+- First comprehensive analysis of AI's environmental impact across the complete lifecycle.
+- Provides real-world data from Facebook's AI infrastructure.
+- Offers practical recommendations for sustainability.
+- Considers both operational and manufacturing impacts.
 
 ### Weaknesses
-- **Limited Current Adoption**: The adoption of energy-efficient hardware solutions is still slow, with many components lacking low-power modes or dynamic power scaling.
-- **Implementation Challenges**: Achieving energy-proportional computing requires extensive changes in system design, which can be costly and time-consuming.
-- **Insufficient Benchmarking**: The paper points out the lack of comprehensive benchmarks that evaluate energy efficiency in real-world usage scenarios, as most current metrics focus on peak performance.
+- Limited discussion of specific technical solutions.
+- Focuses mainly on large-scale industrial AI deployments.
+- Complex trade-offs between different optimization approaches.
+- Implementation challenges for proposed solutions.
 
-## Questions for Discussion  
-1. How can software optimizations be used to complement hardware advancements in energy-efficient server designs? 
+---
 
+## Questions for Discussion
+1. What metrics should be developed to better measure and compare AI systems' environmental impact?
