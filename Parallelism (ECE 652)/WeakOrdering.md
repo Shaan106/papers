@@ -1,10 +1,11 @@
 
 # Weak Ordering - A New Definition’
 Sarita V. Adve and Mark D. Hill
+1990
 
 ## Summary
 
-This paper argues that sequential consistency is great for the programmer, however it leaves a lot of performance on the table. Weak ordering is a solution to this problem, where intra-processor reads and writes are no longer guarenteed to be executed in program order. This allows for more aggressive hardware optimizations, but requires explicit synchronization instructions to enforce ordering when required.
+This paper argues that sequential consistency is great for the programmer, however it leaves a lot of performance on the table. Weak ordering is a solution to this problem, where intra-processor reads and writes are no longer guaranteed to be executed in program order. This allows for more aggressive hardware optimizations, but requires explicit synchronization instructions to enforce ordering when required.
 
 Adve and Hill argue that the old definition of weak ordering is too restrictive and leaves a significant amount of performance on the table. For example, certain memory rollbacks violate the old definition even though they are in line with the spirit of weak ordering (where the programmer sees a sequentially consistent interface). The new definition creates a contract between the hardware and software, where the hardware is weakly ordered if it appears sequentially consistent to all software that obeys the synchronization model.
 
