@@ -4,45 +4,26 @@ In Proceedings of the 19th international conference on Architectural support for
 
 ## Summary
 
-- most CPUs now adopt SC. Not very well understood for heterogenous systems (ie GPUs with a hierarchy of scopes). This paper tries to create a model for scoped synchronization.
+Most CPUs now adopt SC. The idea of consistency is not very well understood for heterogenous systems (ie GPUs with a hierarchy of scopes). This paper tries to create a model for scoped synchronization. They introduce the idea of sequential consistency for heterogeneous systems called SC for HRF (heterogeneous race free). They propose two models: HRF-direct and HRF-indirect. The first model is more restrictive, but the second model allows for more flexibility in synchronization by using intermediary threads to synchronize across scopes.
 
-- SC for HRF models define correctness in terms of a sequen-
-tially consistent execution and rules for what is considered
-“enough” synchronization to avoid races.
-
-- The SC for HRF
-models achieve two fundamental goals: they provide a pre-
-cise definition of memory behavior in a heterogeneous exe-
-cution and they provide a framework to describe that behav-
-ior in a way that typical programmers can understand. While
-we focus on GPUs in this paper due to their prevalence, we
-expect the SC-for-HRF concepts and insights to apply to
-other heterogeneous parts (e.g., DSPs).
-
-- HRF-direct is release data to shared scope on synchronization
-    - may not scale well with modern workloads with irregular parallelism
-
-- In the forward-looking HRF-indirect model, two threads
-can synchronize indirectly through a third party even if the
-two threads interact with that third party using different
-scopes. For example, threads A and C can communicate if A
-synchronizes with another thread B using scope S1 and then
-B synchronizes with C using scope S2. This type of transi-
-tive interaction can enable more irregular parallelism in fu-
-ture heterogeneous applications (e.g., in an algorithm in
-which A does not know who C is or where C is located).
-
-
-- at time of writing parallel programming paradigms offer very weak consistency models or none at all. Everything in hand of the programmers.
-
-- In GPUs some synchronization operations are more costly than others (due to scope of synchronization).
+The idea behind the paper in one line is "implementing sequential consistency in heterogenous systems by enforcing scoped synchronization". Their model is evaluated via gem5 on benchmarks to show the speedup using this programming paradigm. They also argue that (especially HRF-indirect) is flexible and easily to understand for the programmer.
 
 ## Strengths
 
+- Suprisingly simple idea that is extremely powerful. I think it introduces simple rules that benefit heterogenous systems a lot.
+
+- The visualizations and diagrams (especially the code examples) were very helpful in giving concrete cases of where these ideas were powerful.
+
 ## Weaknesses
+
+- Very little evaluation, and on a very small subset of programs. I like the idea, but I think more validation of the performance is necessary.
+
+- I also felt as if things were made much more complicated than they needed to be. Simpler wording would have been nicer.
 
 ## Questions
 
 - Fig2. what does memory_order_seq_cst do?
+
+- I felt as if there could have been more evaluation and benchmarking, but thinking more about it, it seems hard to do with such a contribution. How would you evaluate this? Have a lot of code generated for different benchmarks using this model and then compare?
 
 
