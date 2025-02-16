@@ -1,5 +1,5 @@
 # End-to-end arguments in system design.
-J. H. Saltzer, D. P. Reed, and D. D. Clark. 1984. ACM Trans. Comput. Syst. 2, 4 (Nov. 1984), 277–288. https://doi.org/10.1145/357401.357402
+J. H. Saltzer, D. P. Reed, and D. D. Clark. 1984. ACM Trans. Comput. Syst. 2, 4 (Nov. 1984), 277-288. https://doi.org/10.1145/357401.357402
 
 ## Summary
 
