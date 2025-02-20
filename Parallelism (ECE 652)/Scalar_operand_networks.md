@@ -13,7 +13,7 @@ The authors introduce a 5-tuple model that helps to reason about the tradeoffs i
 
 ## Strengths
 
-- I was a big fan of section slowly building up the complexity of the network, I really got to see the problem arising and understand it as I'm sure the autors do
+- I was a big fan of section slowly building up the complexity of the network, I really got to see the problem arising and understand it as I'm sure the authors do
 
 - End of section 3, introduction of the issues are amazing
     - This paper has changed my perspective on how things should be written, I think the leadup and buildup of the problem is very important for a reader to truly understand the problem like the authors do

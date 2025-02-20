@@ -5,9 +5,9 @@ https://doi.org/10.1145/146628.140384
 
 ## Summary
 
-The authors present a model for designing wormhole routing algorithms that are deadlock free, livelock free, minimaf or nonminimal, and maximally adaptive. By the time of this paper, it is considered that point to point routing (ie via meshes, n-dimensional cubes etc) is much better and scalable than shared bus transactions. This paper presents a method of preventing deadlocks in wormhole routing without needing additional virtual channels or any additional hardware for that matter, they achieve this simply by analyzing the types of turns taken by the routing algorithms.
+The authors present a model for designing wormhole routing algorithms that are deadlock free, livelock free, minimal or nonminimal, and maximally adaptive. By the time of this paper, it is considered that point to point routing (ie via meshes, n-dimensional cubes etc) is much better and scalable than shared bus transactions. This paper presents a method of preventing deadlocks in wormhole routing without needing additional virtual channels or any additional hardware for that matter, they achieve this simply by analyzing the types of turns taken by the routing algorithms.
 
-Their model can be (trivially) summarised as deadlocks happen when cycles happen. Cycles can be prevented if one of the items in the cycle takes a different turn, although this part needs to be checked as more complex cycles can form. The authors provide a method by which you can examine a network and decide which turns can be removed to prevent deadlocks.
+Their model can be (trivially) summarized as deadlocks happen when cycles happen. Cycles can be prevented if one of the items in the cycle takes a different turn, although this part needs to be checked as more complex cycles can form. The authors provide a method by which you can examine a network and decide which turns can be removed to prevent deadlocks.
 
 Shows several examples for 2D meshes. When elimination works, when it doesn't. Shows how solution generally works here to avoid deadlocks. This is continued and this method is shown to work for n-dimensional meshes, k-ary n-cubes and hypercubes.
 
