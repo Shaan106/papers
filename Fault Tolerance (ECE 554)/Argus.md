@@ -3,8 +3,6 @@ A. Meixner, M. E. Bauer and D. Sorin
 40th Annual IEEE/ACM International Symposium on Microarchitecture (MICRO 2007), Chicago, IL, USA, 2007, pp. 210-222, doi: 10.1109/MICRO.2007.18.
 
 
-
-
 ## Summary
 
 Argus is a low-cost, comprehensive error detection for simple cores. The idea is that previous techniques have too much of an overhead associated with them when it comes to error detection (and also correction), to a point where those techniques are realistically infeasible (especially for simple cores). Argus identifies 4 main components that are needed to ensure correctness in any Von Neumann processor: control flow, dataflow, computation, and memory access. The authors lay out these key concepts (and explain why this is true), and then show an example via Argus-1.
