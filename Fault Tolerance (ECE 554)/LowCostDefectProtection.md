@@ -23,7 +23,7 @@ The idea behind BulletProof is to dynamically protect processors from silicon de
 
 ## Questions
 
-- Can the lack of performance degredation be attributed to a bad compiler? As in the compiler is simply letting too many bubbles into the VLIW system?
+- Can the lack of performance degradation be attributed to a bad compiler? As in the compiler is simply letting too many bubbles into the VLIW system?
 
 - What if you are testing all the components (let's say for simplicity Decode then ALU then Memory) and after you have tested Decode, a transient fault occurs in Decode but the code block is committed and no later faults are found so it is thought to be ok? This seems to have been missed.
     - I later read the part about not dealing with transients, but then how would you integrate a transient check system into this?
