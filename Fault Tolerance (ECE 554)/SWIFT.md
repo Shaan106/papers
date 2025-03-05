@@ -13,7 +13,7 @@ This paper presents a software based technique to detect transient faults in sin
 
 - Really cool idea, easy to see their new contributions.
 
-- I especially liked how they provided metrics for several modes of comparision (binary size, IPC, fault detection rate etc).
+- I especially liked how they provided metrics for several modes of comparison (binary size, IPC, fault detection rate etc).
 
 - I like how a clear invariant is established
     "As long as we can ensure that stores execute only if they are “meant to” and stores write the correct data to the correct address, the system will run correctly."
@@ -22,7 +22,7 @@ This paper presents a software based technique to detect transient faults in sin
 
 - Multicore is hard, ensuring order is difficult. However, most modern stuff works with multicore so would be cool to see something on this in future.
 
-- There are a few performance optimizations made here (ie omitting comparisions of signatures) for performance, but this significantly increases fault-time recovery time (ie would be harder to recover from there). This would have been nice to comment on more, even if fault recovery isn't really done.
+- There are a few performance optimizations made here (ie omitting comparisons of signatures) for performance, but this significantly increases fault-time recovery time (ie would be harder to recover from there). This would have been nice to comment on more, even if fault recovery isn't really done.
 
 ## Questions
 
