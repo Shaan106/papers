@@ -17,7 +17,7 @@ The most important factors that influence the design of the system are energy ef
 
 ### Weaknesses
 
-- Cost of parallelism vs better hardware? They just said parallelism better but didnt talk about the costs that has (power etc), as in it could be better for power to have more performant hardware.
+- Cost of parallelism vs better hardware? They just said parallelism better but didn't talk about the costs that has (power etc), as in it could be better for power to have more performant hardware.
 
 ## Questions
 
